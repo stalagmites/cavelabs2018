@@ -139,7 +139,9 @@ function initiateAncestors() {
 
         var totalCost = _.sum(ancestors['nodes'].map(function(n) {return nx_graph.node.get(n)['cost']}));
         totalCost += nx_graph.node.get(nodes[0])['cost'];
-        notify('Total cost: $' + totalCost.toFixed(2), true);
+        var totalTime = _.sum(ancestors['nodes'].map(function(n) {return nx_graph.node.get(n)['time']}));
+        totalCost += nx_graph.node.get(nodes[0])['time'];
+        notify('Total cost: $' + totalCost.toFixed(2) + ', total time: ' + totalTime.toString(), true);
     } else {
         notify('Must have one node selected');
     }

@@ -1,3 +1,5 @@
+![Devpost Page](https://devpost.com/software/25-stalagmites)
+
 ## Inspiration
 
 As the systems we deal with on a daily basis grow in complexity, our bare brains become incapable of making sense of the world around us. An important solution to this pressing problem is the development of intuitive, interactive, and widely available interfaces that democratize the ability to understand these systems. Coming from a background in data science, artificial intelligence, and human-computer interaction, we are passionate about using our skills to help everyone understand the problems around them.
@@ -24,7 +26,8 @@ Building a Supply Chain Network from ground up using large datasets, and impleme
 * Ability to save the changes made in the network into a new downloadable Excel Workbook
 * Adding more performance parameters
 
-Built With
-vis-js
-javascript
-html5
+## Built With
+
+* vis-js
+* javascript
+* html5

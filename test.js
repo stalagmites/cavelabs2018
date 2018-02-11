@@ -420,7 +420,9 @@ function buildNetwork() {
                     color: DEFAULT_NODE_COLOR,
                     size: DEFAULT_NODE_SIZE
                 },
-                shape: 'icon'
+                shape: 'icon',
+                title: 'Cost = $' + parseFloat(attributeDict[stageNamesToIndex[n]]['stageCost'].substring(1)) + ', ' +
+                    'time = ' + parseFloat(attributeDict[stageNamesToIndex[n]]['stageTime'])
             })
         });
         nodesSet.forEach(function(n) {
@@ -461,6 +463,11 @@ function buildNetwork() {
             }
         };
         network = new vis.Network(container, netData, options);
+        network.setOptions({
+            interaction: {
+                hover: true
+            }
+        });
         enableManipulation();
 
         // network.on('click', function(e) {

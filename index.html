@@ -28,12 +28,15 @@
     </head>
 
     <body>
+
         <div id="visualization"></div>
         <i><h1 id="notifier" style="width:100%; height:50px; text-align:center"></h1></i>
         <script type="text/javascript" src="test.js"></script>
 
         <input id="file-input" type="file" onchange="buildNetwork()">
-        <form id="dataset-selector" onchange="buildNetwork()">
+        </br>
+        Choose a data set:
+        <form id="dataset-selector" onchange="buildNetwork()" style="display:inline">
             <input type="radio" id="datasetCereal" name="dataset" value="Cereal" checked="checked">
             <label for="datasetCereal">Cereal</label>
             <input type="radio" id="datasetPerfume" name="dataset" value="Perfume">

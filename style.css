@@ -1,6 +1,16 @@
 #visualization {
     height: 600px;
     width: 100%;
+    border-style: solid;
+}
+
+#app-header {
+    text-align: center;
+    background-color: #222;
+    height: 100px;
+    width: 100%;
+    color: white;
+    border: solid black;
 }
 
 #network-popUp {
@@ -20,4 +30,28 @@
 
 #new-node-type-selector {
     text-align: left;
+}
+
+.button-selected {
+    color: red;
+}
+
+#notifier {
+    color: red;
+    margin: 0;
+}
+
+.controls {
+    float: left;
+    width: 33%;
+}
+
+.controls>p {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.controls>button {
+    font-size: 16px;
 }

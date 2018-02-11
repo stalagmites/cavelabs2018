@@ -29,6 +29,9 @@ function getIconFromName(n) {
 
 function notify(msg) {
     document.getElementById('notifier').innerHTML = msg;
+    setTimeout(function() {
+        document.getElementById('notifier').innerHTML = '';
+    }, 2000)
 }
 
 function getDescendants(n) {
@@ -110,6 +113,7 @@ function initiateAncestors() {
     deselectNodes();
     if (nodes.length === 1) {
         var ancestors = getAncestors(nodes[0]);
+        console.log(ancestors);
         nodesDataSet.update({
             id: nodes[0],
             icon: {
@@ -130,7 +134,11 @@ function initiateAncestors() {
                 color: 'blue',
                 width: HIGHLIGHT_EDGE_WIDTH
             })
-        })
+        });
+
+        var totalCost = _.sum(ancestors['nodes'].map(function(n) {return nx_graph.node.get(n)['cost']}));
+        totalCost += nx_graph.node.get(nodes[0])['cost'];
+        notify('Total cost: $' + totalCost);
     } else {
         notify('Must have one node selected');
     }

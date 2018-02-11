@@ -1,7 +1,5 @@
 # stalagmites
 
-# stalagmites
-
 ## Inspiration
 
 

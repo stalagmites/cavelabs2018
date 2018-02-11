@@ -1,4 +1,4 @@
-![Devpost Page](https://devpost.com/software/25-stalagmites)
+[Devpost Page](https://devpost.com/software/25-stalagmites)
 
 ## Inspiration
 

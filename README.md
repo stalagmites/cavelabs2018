@@ -1,2 +1,3 @@
 # stalagmites
-Network Visualization using Large Datasets
+
+Network Visualization for Large Datasets 📈
